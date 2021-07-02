@@ -1,0 +1,75 @@
+*{box-sizing: border-box;}
+:root
+{
+    --primary:#16989c;
+    --primaryHover:#20bbc0;
+}
+
+body
+{
+    font-family: "Segoe UI";
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box
+{
+    width:500px;
+    height: 500px;
+    border:1px solid black;
+}
+.collapse
+{
+width: 400px;
+background-color: #85b6b7;
+border-radius: 10px;
+padding: 15px;
+position: relative;
+margin-bottom: 25px;
+
+transition: heigth 0.5s;
+overflow: hidden;
+}
+
+.titel
+{
+    font-size: 1.3em;
+    font-weight: bold;
+    border-bottom: 1px solid  #046e72;
+    padding-bottom: 5px;
+}
+.inthalt
+{
+    font-size: 0.9em;
+    color: rgb(53,53,53);
+    margin-top: 15px;
+}
+.btn
+{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background-color: var(--primaryHover);
+}
+
+.btn i
+{
+    transform: rotate(180deg);
+}

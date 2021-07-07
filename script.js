@@ -11,7 +11,7 @@ function col(button)
    if(parent.offsetHeight==64)
    {
     icon.style.transform="rotate(180deg)";
-    parent.style.height="100px"
+    parent.style.height="auto"
    }
    else
    {
